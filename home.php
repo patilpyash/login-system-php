@@ -36,8 +36,8 @@
 
 				<div class="profile-content">
 					<div class="profile-date-l">
-						<?php $date = $user->joined;?>
-						Joined Date: <?php echo date('F - Y', strtotime($date));?>
+						<?php if(isset($date)){ $date = $user->joined;}?>
+						Joined Date: <?php echo date('F - Y', strtotime($date)) ;?>
 					</div>
 					<div class="profile-dis">
 					</div>
